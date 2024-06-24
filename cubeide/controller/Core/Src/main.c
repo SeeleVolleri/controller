@@ -17,11 +17,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include "../Inc/spi.h"
+#include "../Inc/usart.h"
 #include "../Inc/main.h"
 #include "../Inc/gpio.h"
 //#include "../../Drivers/MFRC522-1.4.11/src/MFRC522.h"
 #include <stdbool.h>
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -66,7 +67,7 @@ void SystemClock_Config(void);
 int main(void)
 {
 
-    /* USER CODE BEGIN 1 */
+  /* USER CODE BEGIN 1 */
     bool isCardOnReader = false;
     uint8_t cardUID[7] = {};
     uint8_t cardKey[6] = {};
@@ -74,43 +75,43 @@ int main(void)
 
 
 
-    /* USER CODE END 1 */
+  /* USER CODE END 1 */
 
-    /* MCU Configuration--------------------------------------------------------*/
+  /* MCU Configuration--------------------------------------------------------*/
 
-    /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-    HAL_Init();
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
 
-    /* USER CODE BEGIN Init */
+  /* USER CODE BEGIN Init */
 
-    /* USER CODE END Init */
+  /* USER CODE END Init */
 
-    /* Configure the system clock */
-    SystemClock_Config();
+  /* Configure the system clock */
+  SystemClock_Config();
 
-    /* USER CODE BEGIN SysInit */
+  /* USER CODE BEGIN SysInit */
 
-    /* USER CODE END SysInit */
+  /* USER CODE END SysInit */
 
-    /* Initialize all configured peripherals */
-    MX_GPIO_Init();
-    /* USER CODE BEGIN 2 */
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_SPI1_Init();
+  MX_UART4_Init();
+  /* USER CODE BEGIN 2 */
 
-    /* USER CODE END 2 */
+  /* USER CODE END 2 */
 
-    /* Infinite loop */
-    /* USER CODE BEGIN WHILE */
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
     while (1)
     {
-        /* USER CODE END WHILE */
-        HAL_GPIO_WritePin(GPIOA, led_Pin, GPIO_PIN_SET);   // 设置为高电平
-        HAL_Delay(100);                                    // 延时1000毫秒
-        HAL_GPIO_WritePin(GPIOA, led_Pin, GPIO_PIN_RESET); // 设置为低电平
-        HAL_Delay(1000);                                   // 延时1000毫秒
-                                                           /* USER CODE BEGIN 3 */
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+    
+  /* USER CODE END 3 */
     }
-    /* USER CODE END 3 */
-}
+};
 
 /**
   * @brief System Clock Configuration
