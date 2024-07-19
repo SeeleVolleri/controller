@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "rc522_config.h"
+#include "rc522_function.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
