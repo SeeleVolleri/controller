@@ -1,0 +1,4 @@
+The RC522 library was copied from EmbedFire.
+https://doc.embedfire.com/products/link/zh/latest/module/rfid_nfc/rfid_rc522.html
+© Copyright 2019, embedfire-野火 www.embedfire.com
+Revision 74dd5f1. 最后更新于 2024-07-19, 18:11:29 — GMT+08:00 . 
