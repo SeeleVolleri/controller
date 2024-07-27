@@ -1,38 +1,76 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+### Bug Report for DDTV
+
+感谢你帮助改进 DDTV！请提供尽可能多的细节，以便我们更好地理解和解决你的问题。
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**标题：** [Bug]: 
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**标签：** Bug
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+---
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**咋了？**
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+预期发生什么，实际发生了什么？
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+_例如：我录播完成后发现DDTV炸了！按理来讲它不应该炸的。_
 
-**Additional context**
-Add any other context about the problem here.
+---
+
+**怎么复现？**
+
+**完整和详细的列出你做了什么。**
+
+_例如：我录播花屏/声音不同步了！我首先添加了房间114514, 点击了开始录制, 主播下播后打开文件发现声音和画面不同步。_
+
+---
+
+**分支**
+
+你在用哪个分支？
+
+- [ ] main (DDTV5)
+- [ ] other (ddtv3 或者更旧的 ddtv2)
+
+---
+
+**你运行 DDTV 的电脑系统是什么？**
+
+请注意，精简系统不提供任何支持，建议重装正常系统。
+
+- [ ] Linux
+- [ ] Windows 11
+- [ ] Windows 11 精简版
+- [ ] Windows 10
+- [ ] Windows 10 精简版
+- [ ] Windows 8
+- [ ] Windows 7
+- [ ] Windows 7 精简版
+- [ ] Windows XP
+- [ ] 其他，在怎么复现里写一下。
+
+---
+
+**哪个版本的 DDTV?**
+
+- [ ] DDTV GUI
+- [ ] DDTV Server
+- [ ] DDTV CLI
+- [ ] 其他
+
+---
+
+**你 100% 确定你在使用最新的开发板吗？**
+
+在打勾前请运行一次检查更新。
+
+- [ ] 是的，我 100% 确定。
+
+---
+
+**相关日志**
+
+直接粘贴过来就行。
+
+---
