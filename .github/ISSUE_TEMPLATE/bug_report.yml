@@ -75,7 +75,7 @@ body:
       options:
         - label: 是的，我 100% 确定。
           required: false
-  - type: input
+  - type: textarea
     id: logs
     attributes:
       label: 相关日志
